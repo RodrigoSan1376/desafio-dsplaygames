@@ -9,6 +9,7 @@
   --color-light-gray: #f0f0f0;
   --color-pink: #dd7e92;
   --color-darkgray: #383838;
+  --color-light-gray-2: #c4c4c4;
 }
 
 * {
@@ -146,7 +147,7 @@ a:hover {
 .game-card-text {
   background-color: var(--color-white);
   text-align: center;
-  border-radius: 0px 0px 8px 8px;  
+  border-radius: 0px 0px 8px 8px;
 }
 
 .game-card-text h3 {
@@ -177,6 +178,101 @@ a:hover {
   font-size: 36px;
   font-weight: 700;
   margin: 15px;
+}
+
+#signup {
+  background-color: var(--color-white);
+}
+
+#signup h2 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-gray);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-card {
+  background-color: var(--color-light-gray);
+  width: 300px;
+  padding-top: 50px;
+  padding-left: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.form-info-input input {
+  width: 280px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 13px 22px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid rgb(0, 0, 0, 0.3);
+}
+
+.form-info-input ::placeholder {
+  color: var(--color-light-gray-2);
+}
+
+.form-card label {
+  color: var(--color-gray);
+}
+
+#ctrl-platform input {
+  width: 23px;
+  height: 23px;
+  margin: 7px 7px 7px 0px;
+}
+
+.ctrl-platform-content {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-field input {
+  width: 23px;
+  height: 23px;
+  margin: 9px 9px 9px 0px;
+}
+
+.buttons-card {
+  padding: 20px;
+}
+
+.submit-button {
+  width: 244px;
+  height: 67px;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.reset-button {
+  width: 244px;
+  height: 67px;
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  border-radius: 8px;
+  border: 2px solid var(--color-pink);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px;
 }
 
 @media (max-width: 767px) {
