@@ -9,17 +9,26 @@
   </head>
   <body>
     <header>
-      <nav class="container">
-        <h1>DSPlayGames</h1>
-        <div>
-          <ul>
-            <li><a href="#news">Notícias</a></li>
-            <li><a href="#games">Jogos</a></li>
-            <li><a href="#signup">Inscreva-se</a></li>
-          </ul>
-          <img src="img/user.svg" alt="Profile" />
-        </div>
-      </nav>
+      <div class="header-container">
+        <nav class="container">
+          <div>
+            <h1>DSPlayGames</h1>
+          </div>
+
+          <div class="generic-container">
+            <ul>
+              <li><a href="#news">Notícias</a></li>
+              <li><a href="#games">Jogos</a></li>
+              <li><a href="#signup">Inscreva-se</a></li>
+            </ul>
+            <div>
+              <img src="img/user.svg" alt="Profile" />
+            </div>
+          </div>
+
+          
+        </nav>
+      </div>
     </header>
     <main>
       <section id="news">
@@ -37,7 +46,7 @@
                 <p class="news-card-date">23/02/2022</p>
               </div>
               <div>
-                <p>
+                <p class="news-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto vitae ducimus aperiam. Harum, in dicta?
                   Perspiciatis nam, facilis nesciunt, expedita esse labore
@@ -71,7 +80,7 @@
                 <p class="news-card-date">23/02/2022</p>
               </div>
               <div>
-                <p>
+                <p class="news-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto vitae ducimus aperiam. Harum, in dicta?
                   Perspiciatis nam, facilis nesciunt, expedita esse labore
@@ -103,15 +112,8 @@
       <section id="games">
         <div class="container">
           <h2>Jogos</h2>
+
           <div class="game-container">
-            <div class="game-card">
-              <img src="img/game.png" alt="Horizon Forbidden West" />
-              <div class="game-card-text">
-                <h3>Horizon Forbidden West</h3>
-                <p><span>De</span> Sony Interactive Entertainment</p>
-                <div class="game-score">9.7</div>
-              </div>
-            </div>
 
             <div class="game-card">
               <img src="img/game.png" alt="Horizon Forbidden West" />
@@ -130,7 +132,18 @@
                 <div class="game-score">9.7</div>
               </div>
             </div>
+
+            <div class="game-card">
+              <img src="img/game.png" alt="Horizon Forbidden West" />
+              <div class="game-card-text">
+                <h3>Horizon Forbidden West</h3>
+                <p><span>De</span> Sony Interactive Entertainment</p>
+                <div class="game-score">9.7</div>
+              </div>
+            </div>
+            
           </div>
+
         </div>
       </section>
       <section id="signup">
@@ -156,7 +169,9 @@
                   />
                 </div>
                 <div class="platform-container">
-                  <label for="ctrl-platform">Qual sua plataforma preferida?</label>
+                  <label for="ctrl-platform"
+                    >Qual sua plataforma preferida?</label
+                  >
                   <div id="ctrl-platform">
                     <div class="ctrl-platform-content">
                       <input
@@ -199,17 +214,30 @@
       </section>
     </main>
     <footer>
-      <div>
-        <div>
-          <a href="#">@dsplaygames</a>
-          <a href="#">/dsplaygames</a>
-        </div>
-        <div>
-          <p>DS Play Games Ltda. Todos direitos reservados</p>
-        </div>
-        <div>
-          <a href="#">Política de privacidade</a>
-          <a href="#">Termos de uso</a>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <div>
+              <a href="#">@dsplaygames</a>
+            </div>
+            <div>
+              <a href="#">/dsplaygames</a>
+            </div>
+          </div>
+
+          <div>
+            <p>DS Play Games Ltda. Todos direitos reservados</p>
+          </div>
+
+          <div class="footer-terms">
+            <div>
+              <a href="#">Política de privacidade</a>
+            </div>
+
+            <div>
+              <a href="#">Termos de uso</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

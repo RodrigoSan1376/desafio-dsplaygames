@@ -20,6 +20,7 @@
 }
 
 header {
+  height: 90px;
   background-color: var(--color-green);
   color: var(--color-white);
   box-shadow: 0px 3px 3px rgb(0, 0, 0, 0.6);
@@ -42,12 +43,33 @@ a:hover {
   text-decoration: none;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  height: 302px;
+  background-color: var(--color-darkgray);
+  color: var(--color-white);
+  font-size: 14px;
+  margin-top: 40px;
+}
+
 /* CLASSES/IDs */
 
 .container {
   width: 100%;
   max-width: 990px;
   margin: 0px auto;
+}
+
+.generic-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .news-card {
@@ -69,7 +91,7 @@ a:hover {
   padding: 0px 13px;
 }
 
-.news-card p {
+.news-body {
   color: var(--color-gray);
   font-size: 10px;
   padding: 0px 12px 12px 12px;
@@ -121,6 +143,7 @@ a:hover {
 
 #games {
   background-color: var(--color-light-gray);
+  padding: 0px 10px;
 }
 
 #games h2 {
@@ -131,8 +154,8 @@ a:hover {
 }
 
 #games img {
-  width: 300px;
-  border-radius: 8px 8px 0px 0px;
+  width: 300px;  
+  border-radius: 8px 8px 0px 0px;    
 }
 
 .game-card {
@@ -140,8 +163,9 @@ a:hover {
   flex-direction: column;
   align-items: center;
   height: 326px;
-  margin: 27px 10px;
-  box-shadow: 0px 7px 7px rgb(0, 0, 0, 0.15);
+  margin-right: 30px;  
+  margin-bottom: 27px;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.20);
 }
 
 .game-card-text {
@@ -167,10 +191,10 @@ a:hover {
   color: var(--color-green);
 }
 
-.game-container {
+.game-container {  
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 
 .game-score {
@@ -286,6 +310,33 @@ a:hover {
   margin: 10px 0px;
 }
 
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.footer-content p {
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 37px;
+}
+
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 @media (min-width: 576px) {
   .buttons-card {
     display: flex;
@@ -296,7 +347,7 @@ a:hover {
 @media (max-width: 767px) {
   header li {
     display: none;
-  } 
+  }
 }
 
 @media (min-width: 768px) {
@@ -306,7 +357,78 @@ a:hover {
 
   .platform-container {
     padding-left: 72px;
-  }  
+  }
+
+  .footer-content {
+    width: 100%;
+    flex-direction: row;    
+    justify-content: space-between;
+  }
+
+  .footer-content p {
+    margin: 0px;
+  }
+
+  .footer-social {
+    margin: 0px;
+  }
+
+  .footer-terms {
+    margin: 0px;
+  }
+
+  footer {
+    height: 190px;
+    margin-top: 61px;
+  }
+
+  .header-container li{
+    font-size: 14px;
+    list-style: none;
+    padding-right: 29px;
+  }
+
+  .header-container ul {
+    display: flex;
+  }
+
+  nav h1 {
+    font-size: 24px;
+  }
+
+  #news h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .news-card {
+    margin-bottom: 40px;
+  }
+
+  .news-card h3 {
+    font-size: 24px;
+  }
+
+  .news-card h4 {
+    font-size: 16px;
+  }
+
+  .button-container {
+    margin-bottom: 56px;
+  }
+
+  #games h2 {
+    font-size: 36px;
+    padding-top: 36px;
+    padding-bottom: 73px;
+  }
+
+  .game-card {
+    margin-bottom: 70px;
+  }
+
+  #signup h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 }
-
-
